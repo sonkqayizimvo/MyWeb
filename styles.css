@@ -241,7 +241,7 @@ ul li a:hover {
 }
 .right-about {
     
-    height: 500px;
+    height: auto;
     text-align: center;
 }
 .right-about h1 {
@@ -297,16 +297,21 @@ ol li{
     color: #a855f7;
 }
 .Services{
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  max-height: 100vh;
+  align-items: center; */
+  max-height: 100vh; 
   background:#f7e6ff ;
   height: 100vh;
   width:100%;
   
 }
+.Services-heading {
+  width: 50%;
+  margin: auto;
+}
 .container{
+  height: auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -318,7 +323,7 @@ ol li{
 .container .box{
   position: relative;
   width: 300px;
-  height: 350px;
+  height: auto;
   background:var(--extra-light);
   display: flex;
   justify-content: center;
@@ -334,7 +339,7 @@ ol li{
   gap: 20px;
   padding:0 20px;
   width: 100%;
-  height:100%;
+  height:auto;
   overflow: hidden;
 }
 .container .box .content2 .Icons{
@@ -470,11 +475,11 @@ padding: 20px;
   margin-top: 60px;
 }
 */
-.Services h1{
+/* .Services h1{
   display: flex;
   text-align: center;
   align-items: center;
-}
+} */
 .google-map {
   padding-bottom: 50%;
   position: relative;
@@ -486,4 +491,80 @@ padding: 20px;
   left: 0;
   top: 0;
   position: absolute;
+}
+.Services h1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+}
+.container4 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width:85%;
+}
+
+#location {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#weather {
+  font-size: 24px;
+}
+@media (max-width: 1024px) {
+  .Services h1 {
+    display: block;
+  }
+}
+@media (max-width: 1440px) {
+  .container3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  .about{
+    /* width:700px; */
+    width: 100%;
+    height:100vh;
+    grid-template-columns: 1fr;
+  }
+  .left-about{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+  .right-about{
+    width: 100%;
+  }
+  .left-about img{
+    grid-area: 1/1/2/2;
+  }
+  .Services {
+    height: 100vh;
+  }
+  .Services .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .content2 {
+    height: auto;
+    width: 100%;
+  }
+  .Services h1 {
+    display: flex;
+  }
+  .container3 {
+    text-align: center;
+  }
+  .portfolio {
+    width: 100%;
+    height: 100vh;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    
+  }
 }
