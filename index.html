@@ -11,7 +11,9 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Web Design Mastery | Responsive Portfolio</title>
+    <title>Portfolio</title>
+    <script src="script.js" defer></script>
+  
   </head>
   <body>
   <!--- <a class="weatherwidget-io" href="https://forecast7.com/en/n26d2028d05/johannesburg/" data-label_1="JOHANNESBURG" data-label_2="WEATHER" data-theme="original" >JOHANNESBURG WEATHER</a>
@@ -29,7 +31,7 @@
         <ul>
           <li><a href="#section">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
+        <!--<li><a href="#Portfolio">Portfolio</a></li>-->
           <li><a href="#Services">Services</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
@@ -49,7 +51,7 @@
             responsive, and user-friendly websites.
           </p>
           <div class="action__btns">
-            <button class="hire__me">Hire Me</button>
+           <button class="hire__me">Hire Me</button>-
             <button class="portfolio"><a href="zimvo (2).pdf">Portfolio</a></button>
           </div>
         </div>
@@ -76,7 +78,7 @@
             </p>
         </div>
     </section>
-    <section class="Portfolio" id="Portfolio">
+   <!--<section class="Portfolio" id="Portfolio">
         <h1>My Portfolio</h1>
         <div class="portfolio-grid">
             <div class="left-icon">
@@ -126,9 +128,9 @@
               </ol>
             </div>
         </div>
-    </section>
+    </section>-->
     <section class="Services" id="Services">
-      <h1>My Services</h1>
+      <h1 class="Services-heading">My Services</h1>
       <div class="container">
        <!--<h1>My Services</h1>-->
         <div class="box" style="--clr: rgb(250,227,245);">
@@ -216,18 +218,24 @@
     <tr>
         <td>Address</td>
         <td>
-          <div class="google-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.365791716301!2d28.046794075360452!3d-26.249789065831973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f1a4765c517%3A0x99b7e7ea96d54465!2s44%20Lindhorst%20St%2C%20Kenilworth%2C%20Johannesburg%20South%2C%202190!5e0!3m2!1sen!2sza!4v1699955649368!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
-        </td>
+      </div>
+    </div>
+       </div>
+       </section>
+       <div class="google-map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.365791716301!2d28.046794075360452!3d-26.249789065831973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f1a4765c517%3A0x99b7e7ea96d54465!2s44%20Lindhorst%20St%2C%20Kenilworth%2C%20Johannesburg%20South%2C%202190!5e0!3m2!1sen!2sza!4v1699955649368!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+       </td>
     </tr>
 
 </table>
+<div class="container4">
+  <h1>Weather Forecast</h1>
+  <div id="location"></div>
+  <div id="weather"></div>
 </div>
- </div>
-    </div>
-    </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
   </body>
 </html>
