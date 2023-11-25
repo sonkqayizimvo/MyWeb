@@ -178,47 +178,6 @@ ul li a:hover {
   width: min(25rem, 90%);
   border-radius: 100%;
 }
-
-@media (width < 750px) {
-  nav .checkbox {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
-
-  .section__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image {
-    grid-area: 1/1/2/2;
-  }
-
-  .action__btns {
-    margin: auto;
-  }
-}
-
 .about{
     display: grid;
     width: 100%;
@@ -240,7 +199,7 @@ ul li a:hover {
     border-radius: 600%;
 }
 .right-about {
-    
+    padding-right: 10%;
     height: auto;
     text-align: center;
 }
@@ -257,7 +216,7 @@ ul li a:hover {
 .right-about p {
     font-size: 20px;
     font-weight: 600;
-    padding: 0 50px;
+    /* padding: 0 50px; */
 
 }
 .Portfolio{
@@ -300,10 +259,11 @@ ol li{
   /* display: flex;
   justify-content: center;
   align-items: center; */
+  padding-top: 10%;
   max-height: 100vh; 
   background:#f7e6ff ;
   height: 100vh;
-  width:100%;
+  /* width:100%; */
   
 }
 .Services-heading {
@@ -314,9 +274,9 @@ ol li{
   height: auto;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 60px 0;
   gap: 60px;
 }
@@ -350,18 +310,18 @@ ol li{
   display: flex;
   justify-content: center;
   align-items:center;
-  font: size 2.5em;
+  font-size:  1.5em;
   background: rgb(214,71,195);
   transition: 0.5s ease-in-out;
 }
 .container .box:hover .content2 .Icons{
   background:var(--clr);
   color: #2e2e2e;
-    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
+  box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr);
     
 }
 .container .box .content2 .text h3{
-  font-size: 1.5em;
+  font-size: 2.5rem;
   color: var(--text-dark);
   font-weight: 600;
   transition: 0.5s ease-in-out;
@@ -372,10 +332,12 @@ ol li{
 .container .box .content2 .text p{
   color: var(--text-dark);
   transition: 0.5s ease-in-out;
+  font-size: 1.1rem;
 }
 .container .box:hover .content2 .text p{
   color: #1f2937;
 }
+
 /*.container .box .content2 .text a{
   position: relative;
   background: var(--clr);
@@ -394,7 +356,9 @@ ol li{
 
 .container3{
   width: 80%;
-  margin: 50px auto;
+  height: 100vh;
+  margin: auto;
+  padding-top: 10%;
   background: var(--extra-light);
   font-size: 14px;
 }
@@ -497,12 +461,17 @@ padding: 20px;
   font-size: 45px;
   font-weight: 600;
 }
+.Weather {
+  width: 100%;
+  height: 100vh;
+}
 .container4 {
   text-align: center;
-  padding: 20px;
+  padding-top: 25%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width:85%;
+  width:100%;
+  height: 100vh;
 }
 
 #location {
@@ -510,61 +479,302 @@ padding: 20px;
   margin-bottom: 10px;
 }
 
-#weather {
+#Weather {
   font-size: 24px;
 }
+@media (max-width: 1445px) {
+  .section {
+    padding-left: 10%;
+  }
+  .about {
+    justify-content:space-evenly;
+    padding: 5% 10%;
+  }
+  .left-about img {
+    height: auto;
+    width: 100%;
+  }
+  .right-about h1 {
+    font-size: 3rem;
+  }
+  .right-about p {
+    font-size: 1.1rem;
+  }
+  .Services {
+    width: 100%;
+    height: 100vh;
+    padding-top: 12%;
+  }
+  .container .box .content2 .Icons {
+    font-size: 1.5rem;
+  }
+  .container .box .content2 .text h3 {
+    font-size: 1.5rem;
+  }
+  .container .box .content2 .text p {
+    font-size: 1.1rem;
+  }
+}
 @media (max-width: 1024px) {
-  .Services h1 {
+  .about {
+    padding: 10% 0;
+  }
+  .left-about img {
+    width: 80%;
+    margin: auto;
+  }
+  .right-about h1 {
+    font-size: 30px;
+  }
+  .right-about h4 {
+    font-size: 25px;
+  }
+  .right-about p {
+    font-size: 15px;
+  }
+  .content {
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    padding: 40% 0;
+  }
+  .container .box .content2 .text h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    padding: 10% 0;
+  }
+}
+@media (max-width: 880px) {
+  .Services {
+    padding-top: 20%;
+  }
+  .container3 {
+    padding: 15% 0;
+    width: 90%;
+    margin: auto;
+  }
+  .container4 {
+    padding: 30% 0;
+  }
+}
+@media (width < 760px) {
+  nav .checkbox {
     display: block;
   }
-}
-@media (max-width: 1440px) {
-  .container3 {
-    text-align: center;
-  }
-}
 
-@media (max-width: 768px){
-  .about{
-    /* width:700px; */
+  ul {
+    position: absolute;
     width: 100%;
-    height:100vh;
-    grid-template-columns: 1fr;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
   }
-  .left-about{
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 6rem 1rem 5rem 1rem;
     text-align: center;
-    margin: auto;
-    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
   }
-  .right-about{
-    width: 100%;
+  .title {
+    font-size: 1.8rem;
   }
-  .left-about img{
+  .right-about {
+    padding: 0 10%;
+  }
+  .content {
+    padding: 0;
+    gap: 0;
+  }
+  .image {
     grid-area: 1/1/2/2;
+    text-align: center;
+  }
+
+  .action__btns {
+    margin: auto;
+    
+  }
+  .action__btns .portfolio{
+    height: 113px;
+    margin: auto;
+  }
+  .Weather{
+    padding: 50%;
+  }
+  #about {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .about {
+    padding-top: 15%;
+  }
+  #about .right-about h1 {
+    font-size: 40px;
+  }
+  #about .right-about h4 {
+    font-size: 25px;
+  }
+  #about .right-about p {
+    font-size: 15px;
+  }
+  #about div:nth-of-type(1) {
+    order: 2;
+  }
+  .left-about {
+    text-align: center;
+  }
+  .left-about img {
+    width: 50%;
+    margin: auto;
   }
   .Services {
     height: 100vh;
+    padding: 19% 0 0 0;
   }
-  .Services .container {
-    height: auto;
-    flex-direction: column;
-  }
-  .content2 {
+  #Services .container {
     height: auto;
     width: 100%;
+    padding-bottom: 0;
   }
   .Services h1 {
-    display: flex;
+    font-size: 35px;
+  }
+  .container .box .content2 .Icons {
+    font-size: 1rem;
+}.container .box .content2 .text p {
+  font-size: 15px;
+}
+  #Weather {
+    padding: 10% 0 0 0;
+  }
+}
+@media (max-width: 650px) {
+  .image img {
+    width: 250px;
+    height: auto;
+    margin: auto;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .action__btns .portfolio {
+    height: 70px;
+    width: auto;
+    margin: auto;
+  }
+  .hire__me {
+    height: 70px;
+    width: auto;
+    margin: auto;
+  }
+  .Services {
+    padding-top: 20%;
+  }
+  .container .box .content2 .text p {
+    font-size: 13px;
   }
   .container3 {
-    text-align: center;
+    width: 90%;
+    margin: auto;
   }
-  .portfolio {
-    width: 100%;
+}
+@media (max-width: 570px) {
+  .container .box .content2 .text p {
+  font-size: 11px;
+}
+}
+@media (max-width: 450px) {
+.section {
+  padding: 0;
+}
+  #about .right-about p {
+  font-size: 12px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 5% 50%;
+}
+.Services {
+  padding-top:20%;
+}
+.container3 {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+.contact-box {
+  width: 100%;
+  gap: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.button2 {
+  margin-bottom: 5%;
+}
+.contact-left {
+  flex-basis: auto;
+  padding: 0;
+  width: 300px;
+}
+.contact-right {
+  width: 300px;
+}
+
+.google-map {
+  /* margin-right: 10%; */
+  width: 150px;
+}
+table {
+  width: inherit;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.Contact {
+  margin-top: 40%;
+}
+.container4 {
+  height: 100vh;
+  margin-top: 20%;
+  padding-top: 40%;
+}
+}
+@media (max-width: 412px) {
+  .container3 {
     height: 100vh;
+    padding-top: 40%;
   }
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    
+  .container4 {
+    margin-top: 80%;
+  }
+  .container.content2 .Icons .box{
+    height: 5vh;
+  }
+
+}
+@media (max-width:414px) {
+  .Services .content2 p{
+    font-size: 0.3rem;
   }
 }
