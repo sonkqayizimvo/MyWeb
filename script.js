@@ -1,3 +1,7 @@
+function alert2(){
+    alert("Page Under Development");
+}
+
 document.addEventListener('DOMContentLoaded', getWeather);
 
 function getWeather() {
